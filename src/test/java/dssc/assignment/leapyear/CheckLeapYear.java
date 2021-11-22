@@ -20,4 +20,7 @@ public class CheckLeapYear {
 
     @Test
     void is_4_leap() { Assertions.assertEquals(true, leapYear.isLeapYear(4)); }
+
+    @Test
+    void is_8_leap() { Assertions.assertEquals(true, leapYear.isLeapYear(8));}
 }

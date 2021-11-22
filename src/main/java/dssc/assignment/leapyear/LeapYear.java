@@ -4,7 +4,7 @@ public class LeapYear {
 
     boolean isLeapYear(int year) {
 
-        if ( year == 4) {
+        if ( year%4 == 0) {
             return true;
         }
         else {
