@@ -6,7 +6,7 @@ When you write tests, think about what output you should expect given an input
  - ~~per 3 printa false~~
  - ~~per 4 printa true~~
  - ~~per 8 printa true~~
- - per 12 printa true
+ - ~~per 12 printa true~~
  - per 100 printa flase
  - per 200 printa false
  - per 300 printa false

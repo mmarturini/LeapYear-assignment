@@ -17,5 +17,7 @@ public class CheckLeapYear {
     @ValueSource(ints = {4,8,12})
     void divisible_by_4(int year) { Assertions.assertEquals(true, leapYear.isLeapYear(year));}
 
-
+    @ParameterizedTest
+    @ValueSource(ints = {100,200,300})
+    void divisible_by_4_and_divisible_by_100(int year) { Assertions.assertEquals(false, leapYear.isLeapYear(year));}
 }
