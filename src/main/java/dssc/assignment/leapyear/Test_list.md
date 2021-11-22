@@ -1,11 +1,11 @@
 When you write tests, think about what output you should expect given an input
 
 
- - ~~per 1 printa false~~ DONE
- - ~~per 2 printa false~~ DONE
+ - ~~per 1 printa false~~ 
+ - ~~per 2 printa false~~ 
  - ~~per 3 printa false~~
  - ~~per 4 printa true~~
- - per 8 printa true
+ - ~~per 8 printa true~~
  - per 12 printa true
  - per 100 printa flase
  - per 200 printa false

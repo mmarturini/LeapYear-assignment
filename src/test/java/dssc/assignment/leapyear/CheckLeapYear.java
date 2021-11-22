@@ -2,25 +2,20 @@ package dssc.assignment.leapyear;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class CheckLeapYear {
 
     private final LeapYear leapYear = new LeapYear();
 
-    @Test
-    void is_1_leap() {
-        Assertions.assertEquals(false, leapYear.isLeapYear(1));
-    }
+    @ParameterizedTest
+    @ValueSource(ints = {1,2,3})
+    void not_divisible_by_4(int year) { Assertions.assertEquals(false, leapYear.isLeapYear(year));}
 
-    @Test
-    void is_2_leap() { Assertions.assertEquals(false, leapYear.isLeapYear(2)); }
+    @ParameterizedTest
+    @ValueSource(ints = {4,8,12})
+    void divisible_by_4(int year) { Assertions.assertEquals(true, leapYear.isLeapYear(year));}
 
-    @Test
-    void is_3_leap() { Assertions.assertEquals(false, leapYear.isLeapYear(3)); }
 
-    @Test
-    void is_4_leap() { Assertions.assertEquals(true, leapYear.isLeapYear(4)); }
-
-    @Test
-    void is_8_leap() { Assertions.assertEquals(true, leapYear.isLeapYear(8));}
 }
