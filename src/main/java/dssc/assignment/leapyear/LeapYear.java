@@ -2,7 +2,7 @@ package dssc.assignment.leapyear;
 
 public class LeapYear {
 
-    boolean isLeapYear(int year) {
+    Boolean isLeapYear(int year) {
 
         if ( year%4 == 0) {
             if (year%100 == 0) {
@@ -16,5 +16,9 @@ public class LeapYear {
         else {
             return false;
         }
+    }
+
+    void print(int year) {
+        System.out.println(this.isLeapYear(year));
     }
 }

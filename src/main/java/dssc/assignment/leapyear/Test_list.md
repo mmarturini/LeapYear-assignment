@@ -10,9 +10,9 @@ When you write tests, think about what output you should expect given an input
  - ~~per 100 printa flase~~
  - ~~per 200 printa false~~
  - ~~per 300 printa false~~
- - per 1900 printa false
- - per 400 printa true
- - per 2000 printa true
- - per 800 printa true
+ - ~~per 1900 printa false~~
+ - ~~per 400 printa true~~
+ - ~~per 2000 printa true~~
+ - ~~per 800 printa true~~
  - print on stdout
  - per anni avanti cristo? 
